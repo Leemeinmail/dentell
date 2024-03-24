@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>DENTELL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+    <body class="main">
+        <header class="header js-header">
+            <div class="header__container">
+                <nav class="header__left nav js-nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__text nav__logo">
+                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8.714.233 3.643 2.103L1.43 8.646V4.44L8.714.233ZM1.429 12.852v4.206l25.468-14.74L23.263.22 1.429 12.852ZM1.429 21.265l3.643 2.103L30.537 8.625V4.428L1.43 21.265ZM30.571 17.058 5.072 31.781v-4.207l25.47-14.738.03 4.222ZM19.597 27.548l.046 4.233 7.24-4.18.046-4.233-7.332 4.18Z" fill="#fff"/></svg>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__text">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__text">Кейсы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__text">Услуги и цены</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__text">Команда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__text">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__middle"></div>
+                <div class="header__right">
+                    <div class="header__callback">
+                        <button data-tooltip-modal-show="contact-us" class="small-btn -transparent -blur js-tooltip-modal-target">
+                            Связаться
+                        </button>
+                        <div data-tooltip-modal="contact-us" class="header__tooltip-modal tooltip-modal">
+                            <div class="tooltip-modal__top">
+                                <div class="tooltip-modal__title">Свяжитесь с нами</div>
+                                <button data-tooltip-modal-closed class="tooltip-modal__closed">
+                                    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"/></svg>
+                                </button>
+                            </div>
+                            <div class="tooltip-modal__body">
+                                <div class="tooltip-modal__contacts">
+                                    <div class="tooltip-modal__phone">
+                                        <div class="callback-box">
+                                            <div class="callback-box__left">
+                                                <div class="callback-box__icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="#080B2F"></path></svg>                                    
+                                                </div>
+                                            </div>
+                                            <div class="callback-box__right">
+                                                <a href="tel:+71234567889" class="callback-box__phone">+7 123 456 78 89</a>
+                                                <div class="status -work">
+                                                    <div class="status__circle"></div>
+                                                    <div class="status__text">Сейчас работаем</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tooltip-modal__messagers">
+                                        <div class="messagers">
+                                            <div class="messagers__item">
+                                                <a href="" class="messagers-button -netural">
+                                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.241.241 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z" fill="url(#a)"></path><defs><linearGradient id="a" x1="24" y1="0" x2="0" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#2984F0"></stop><stop offset="1" stop-color="#0062ED"></stop></linearGradient></defs></svg>
+                                                </a>
+                                            </div>
+                                            <div class="messagers__item">
+                                                <a href="" class="messagers-button -color">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.05 4.91006C18.1332 3.98399 17.0412 3.24973 15.8376 2.75011C14.6341 2.25049 13.3431 1.99552 12.04 2.00006C6.58 2.00006 2.13 6.45006 2.13 11.9101C2.13 13.6601 2.59 15.3601 3.45 16.8601L2.05 22.0001L7.3 20.6201C8.75 21.4101 10.38 21.8301 12.04 21.8301C17.5 21.8301 21.95 17.3801 21.95 11.9201C21.95 9.27006 20.92 6.78006 19.05 4.91006ZM12.04 20.1501C10.56 20.1501 9.11 19.7501 7.84 19.0001L7.54 18.8201L4.42 19.6401L5.25 16.6001L5.05 16.2901C4.22775 14.977 3.79114 13.4593 3.79 11.9101C3.79 7.37006 7.49 3.67006 12.03 3.67006C14.23 3.67006 16.3 4.53006 17.85 6.09006C18.6175 6.85402 19.2257 7.76272 19.6394 8.76348C20.0531 9.76425 20.264 10.8372 20.26 11.9201C20.28 16.4601 16.58 20.1501 12.04 20.1501ZM16.56 13.9901C16.31 13.8701 15.09 13.2701 14.87 13.1801C14.64 13.1001 14.48 13.0601 14.31 13.3001C14.14 13.5501 13.67 14.1101 13.53 14.2701C13.39 14.4401 13.24 14.4601 12.99 14.3301C12.74 14.2101 11.94 13.9401 11 13.1001C10.26 12.4401 9.77 11.6301 9.62 11.3801C9.48 11.1301 9.6 11.0001 9.73 10.8701C9.84 10.7601 9.98 10.5801 10.1 10.4401C10.22 10.3001 10.27 10.1901 10.35 10.0301C10.43 9.86006 10.39 9.72006 10.33 9.60006C10.27 9.48006 9.77 8.26006 9.57 7.76006C9.37 7.28006 9.16 7.34006 9.01 7.33006H8.53C8.36 7.33006 8.1 7.39006 7.87 7.64006C7.65 7.89006 7.01 8.49006 7.01 9.71006C7.01 10.9301 7.9 12.1101 8.02 12.2701C8.14 12.4401 9.77 14.9401 12.25 16.0101C12.84 16.2701 13.3 16.4201 13.66 16.5301C14.25 16.7201 14.79 16.6901 15.22 16.6301C15.7 16.5601 16.69 16.0301 16.89 15.4501C17.1 14.8701 17.1 14.3801 17.03 14.2701C16.96 14.1601 16.81 14.1101 16.56 13.9901Z" fill="white"></path></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button data-modal-show="callback" class="tooltip-modal__btn">Заказать обратный звонок</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-modal-show="sing-up" class="header__diagnostics">
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 7.99996H9.33333V11.3333H6V7.99996ZM10.6667 1.99996H10V0.666626H8.66667V1.99996H3.33333V0.666626H2V1.99996H1.33333C0.6 1.99996 0 2.59996 0 3.33329V12.6666C0 13.4 0.6 14 1.33333 14H10.6667C11.4 14 12 13.4 12 12.6666V3.33329C12 2.59996 11.4 1.99996 10.6667 1.99996ZM10.6667 3.33329V4.66663H1.33333V3.33329H10.6667ZM1.33333 12.6666V5.99996H10.6667V12.6666H1.33333Z" fill="white"/></svg>
+                        <span>Записаться</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="main-banner main__section">
+            <div class="main-banner__item main-banner-item">
+                <img width="1280" height="740" class="main-banner-item__image" src="img/main-banner.png" alt="" loading="lazy">
+                <div class="main-banner-item__content content-banner">
+                    <div class="content-banner__intro">
+                        <div class="content-banner__title">
+                            Превентивная<br> программа для детей Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                        <div class="content-banner__text">
+                            Не допустим проблем с прикусом, зубами, ВНЧ суставом и осанкой вашего ребенка в будущем
+                            Lorem ipsum sectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            Lorem ipsum sectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                    </div>
+                    <div data-modal-show="sing-up" class="content-banner__diagnostics">
+                        Записаться на диагностику
+                    </div>
+                    <div class="content-banner__video">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.88034 3.70269C5.76867 3.09907 4.5 3.91515 4.5 5.03296V18.968C4.5 20.0854 5.76901 20.9012 6.87984 20.2965L19.7047 13.3225C19.9447 13.1949 20.1454 13.0044 20.2854 12.7715C20.4254 12.5385 20.4994 12.2718 20.4994 12C20.4994 11.7282 20.4254 11.4615 20.2854 11.2285C20.1455 10.9955 19.9447 10.805 19.7047 10.6773L19.6923 10.6707L6.88034 3.70269ZM1.5 5.03296C1.5 1.53094 5.29895 -0.570904 8.31317 1.06697L21.1202 8.03224C21.8377 8.41543 22.438 8.98606 22.857 9.68343C23.2773 10.383 23.4994 11.1838 23.4994 12C23.4994 12.8161 23.2773 13.6169 22.857 14.3165C22.438 15.0139 21.8377 15.5845 21.1201 15.9677L8.31416 22.9314C8.31397 22.9315 8.31435 22.9313 8.31416 22.9314C5.29908 24.5722 1.5 22.4683 1.5 18.968V5.03296Z" fill="white"></path></svg>
+                        <span>Смотреть видео</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-image main__section">
+            <div class="text-image__body">
+                <div class="text-image__content">
+                    <div class="text-image__title">
+                        Наша миссия — улучшить качество жизни ваших детей
+                    </div>
+                    <div class="text-image__text">
+                        Наш подход основан на эффективности и мягкости методов, а также на заботе о конечном результате
+                        Наш подход основан на эффективности и мягкости методов, а также на заботе о конечном результате
+                    </div>
+                </div>
+                <div class="text-image__pic">
+                    <img width="588" height="280" src="img/our-mission.png" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="histories main__section">
+            <div class="histories__top">
+                <div class="histories__title">Ещё истории</div>
+                <div class="histories__arrows">
+                    <button class="arrow-btn histories__prev js-history-prev">
+                        <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.09 11.42.58 5.91 6.09.397l1.171 1.159-3.505 3.506h8.517v1.693H3.756l3.505 3.5-1.17 1.165Z"/></svg>
+                    </button>
+                    <button class="arrow-btn histories__next js-history-next">
+                        <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6.182 11.42-1.17-1.159 3.505-3.505H0V5.062h8.517l-3.506-3.5L6.181.399l5.512 5.511-5.511 5.512Z"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="histories__body js-histories-slider">
+                <div class="histories__item js-result-container">
+                    <div class="history-card">
+                        <div class="history-card__result js-result-images">
+                            <div class="history-card__before">
+                                <img width="384" height="290" src="img/result-1.png" alt="" loading="lazy">
+                            </div>
+                            <div class="history-card__after">
+                                <img width="384" height="290" src="img/result-2.png" alt="" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="history-card__image">
+                            <img width="384" height="380" src="img/histories-1.png" alt="" loading="lazy">
+                        </div>
+                        <div class="history-card__descr">
+                            <div class="history-card__title">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
+                            </div>
+                            <div class="history-card__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            </div>
+                            <button
+                                class="history-card__btn js-history-change"
+                                data-active-text="Назад к описанию"
+                                data-disable-text="Смотреть до / после"
+                            >
+                                    Смотреть до / после
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="histories__item js-result-container">
+                    <div class="history-card">
+                        <div class="history-card__result js-result-images">
+                            <div class="history-card__before">
+                                <img width="384" height="290" src="img/result-1.png" alt="" loading="lazy">
+                            </div>
+                            <div class="history-card__after">
+                                <img width="384" height="290" src="img/result-2.png" alt="" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="history-card__image">
+                            <img width="384" height="380" src="img/histories-2.png" alt="" loading="lazy">
+                        </div>
+                        <div class="history-card__descr">
+                            <div class="history-card__title">
+                                Анастасия П., 12 лет
+                            </div>
+                            <button
+                                class="history-card__btn js-history-change"
+                                data-active-text="Назад к описанию"
+                                data-disable-text="Смотреть до / после"
+                            >
+                                    Смотреть до / после
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="histories__item js-result-container">
+                    <div class="history-card">
+                        <div class="history-card__result js-result-images">
+                            <div class="history-card__before">
+                                <img width="384" height="290" src="img/result-1.png" alt="" loading="lazy">
+                            </div>
+                            <div class="history-card__after">
+                                <img width="384" height="290" src="img/result-2.png" alt="" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="history-card__image">
+                            <img width="384" height="380" src="img/histories-3.png" alt="" loading="lazy">
+                        </div>
+                        <div class="history-card__descr">
+                            <div class="history-card__title">
+                                Анна В., 14 лет
+                            </div>
+                            <div class="history-card__text">
+                                Вытянули клык и выровняли неровные зубы
+                            </div>
+                            <button
+                                class="history-card__btn js-history-change"
+                                data-active-text="Назад к описанию"
+                                data-disable-text="Смотреть до / после"
+                            >
+                                    Смотреть до / после
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="histories__item js-result-container">
+                    <div class="history-card">
+                        <div class="history-card__result js-result-images">
+                            <div class="history-card__before">
+                                <img width="384" height="290" src="img/result-1.png" alt="" loading="lazy">
+                            </div>
+                            <div class="history-card__after">
+                                <img width="384" height="290" src="img/result-2.png" alt="" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="history-card__image">
+                            <img width="384" height="380" src="img/histories-1.png" alt="" loading="lazy">
+                        </div>
+                        <div class="history-card__descr">
+                            <div class="history-card__title">
+                                Агата К., 8 лет
+                            </div>
+                            <div class="history-card__text">
+                                Получили пространство для постоянных зубов и ожидаем до 12 лет
+                            </div>
+                            <button
+                                class="history-card__btn js-history-change"
+                                data-active-text="Назад к описанию"
+                                data-disable-text="Смотреть до / после"
+                            >
+                                    Смотреть до / после
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services main__section">
+            <div class="services__title">Лечение</div>
+            <div class="services__tab-list">
+                <button data-target="section-1" class="services__tab js-services-toggle -active">
+                    3–6 лет
+                </button>
+                <button data-target="section-2" class="services__tab js-services-toggle">
+                    6–9 лет
+                </button>
+                <button data-target="section-1" class="services__tab js-services-toggle">
+                    9–12 лет
+                </button>
+                <button data-target="section-2" class="services__tab js-services-toggle">
+                    12–15 лет
+                </button>
+                <button data-target="section-1" class="services__tab js-services-toggle">
+                    15–18 лет
+                </button>
+                <button data-target="section-2" class="services__tab js-services-toggle">
+                    18–∞ лет
+                </button>
+                <button data-target="section-1" class="services__tab js-services-toggle">
+                    3–6 лет
+                </button>
+                <button data-target="section-2" class="services__tab js-services-toggle">
+                    6–9 лет
+                </button>
+                <button data-target="section-1" class="services__tab js-services-toggle">
+                    9–12 лет
+                </button>
+                <button data-target="section-2" class="services__tab js-services-toggle">
+                    12–15 лет
+                </button>
+                <button data-target="section-1" class="services__tab js-services-toggle">
+                    15–18 лет
+                </button>
+                <button data-target="section-2" class="services__tab js-services-toggle">
+                    18–∞ лет
+                </button>
+            </div>
+            <div class="services__content">
+                <div id="section-1" class="services__section js-services-section -open">
+                    <div class="services__grid">
+                        <div class="services__col-2 image-item">
+                            <img width="588" height="500" src="img/blog-video.png" alt="" loading="lazy">
+                            <div class="image-item__controll">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.88034 3.70269C5.76867 3.09907 4.5 3.91515 4.5 5.03296V18.968C4.5 20.0854 5.76901 20.9012 6.87984 20.2965L19.7047 13.3225C19.9447 13.1949 20.1454 13.0044 20.2854 12.7715C20.4254 12.5385 20.4994 12.2718 20.4994 12C20.4994 11.7282 20.4254 11.4615 20.2854 11.2285C20.1455 10.9955 19.9447 10.805 19.7047 10.6773L19.6923 10.6707L6.88034 3.70269ZM1.5 5.03296C1.5 1.53094 5.29895 -0.570904 8.31317 1.06697L21.1202 8.03224C21.8377 8.41543 22.438 8.98606 22.857 9.68343C23.2773 10.383 23.4994 11.1838 23.4994 12C23.4994 12.8161 23.2773 13.6169 22.857 14.3165C22.438 15.0139 21.8377 15.5845 21.1201 15.9677L8.31416 22.9314C8.31397 22.9315 8.31435 22.9313 8.31416 22.9314C5.29908 24.5722 1.5 22.4683 1.5 18.968V5.03296Z" fill="white"/></svg>
+                            </div>
+                        </div>
+                        <div class="services__col-2 blog-item">
+                            <div class="blog-item__pic">
+                                <img width="588" height="340" src="img/blog-item-1.png" alt="" loading="lazy">
+                            </div>
+                            <div class="blog-item__content">
+                                <div class="blog-item__title">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                </div>
+                                <div class="blog-item__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col-3 blog-item blog-item">
+                            <div class="blog-item__pic">
+                                <img width="384" height="340" src="img/blog-item-2.png" alt="" loading="lazy">
+                            </div>
+                            <div class="blog-item__content">
+                                <div class="blog-item__title">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                </div>
+                                <div class="blog-item__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col-3 blog-item blog-item">
+                            <div class="blog-item__pic">
+                                <img width="384" height="340" src="img/blog-item-3.png" alt="" loading="lazy">
+                            </div>
+                            <div class="blog-item__content">
+                                <div class="blog-item__title">
+                                    Замещение отсутствующих зубов
+                                </div>
+                                <div class="blog-item__text">
+                                    Молочные зубы держат место для постоянных.
+                                    Нужно использовать удерживающую распорку при удалении молочного,
+                                    чтобы постоянные зубы выросли ровно
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col-3 blog-item blog-item">
+                            <div class="blog-item__pic">
+                                <img width="384" height="340" src="img/blog-item-4.png" alt="" loading="lazy">
+                            </div>
+                            <div class="blog-item__content">
+                                <div class="blog-item__title">
+                                    Замещение отсутствующих зубов
+                                </div>
+                                <div class="blog-item__text">
+                                    Молочные зубы держат место для постоянных.
+                                    Нужно использовать удерживающую распорку при удалении молочного,
+                                    чтобы постоянные зубы выросли ровно
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col-3 blog-item blog-item">
+                            <div class="blog-item__pic">
+                                <img width="384" height="340" src="img/blog-item-5.png" alt="" loading="lazy">
+                            </div>
+                            <div class="blog-item__content">
+                                <div class="blog-item__title">
+                                    Замещение отсутствующих зубов
+                                </div>
+                                <div class="blog-item__text">
+                                    Молочные зубы держат место для постоянных.
+                                    Нужно использовать удерживающую распорку при удалении молочного,
+                                    чтобы постоянные зубы выросли ровно
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col-3 blog-item blog-item">
+                            <div class="blog-item__pic">
+                                <img width="384" height="340" src="img/blog-item-6.png" alt="" loading="lazy">
+                            </div>
+                            <div class="blog-item__content">
+                                <div class="blog-item__title">
+                                    Замещение отсутствующих зубов
+                                </div>
+                                <div class="blog-item__text">
+                                    Молочные зубы держат место для постоянных.
+                                    Нужно использовать удерживающую распорку при удалении молочного,
+                                    чтобы постоянные зубы выросли ровно
+                                </div>
+                            </div>
+                        </div>
+                        <div data-modal-show="sing-up" class="services__col-3 sign-up-box">
+                            <div class="sign-up-box__title">
+                                Записать ребёнка на диагностику использовать удерживающую распорку при удалении молочного,
+                                чтобы постоянные зубы выросли ровно
+                            </div>
+                            <div class="sign-up-box__img">
+                                <img width="320" height="280" src="img/sing-up-box.png" alt="" loading="lazy">
+                            </div>
+                            <div class="sign-up-box__bot">
+                                <button class="sign-up-box__btn" href="">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.18182 11.4205L5.01136 10.2614L8.51705 6.75568H0V5.0625H8.51705L5.01136 1.5625L6.18182 0.397727L11.6932 5.90909L6.18182 11.4205Z" fill="white"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="section-2" class="services__section js-services-section">
+                    <div class="services__grid">
+                        <div class="services__col-3 blog-item blog-item">
+                            <div class="blog-item__pic">
+                                <img width="384" height="340" src="img/blog-item-1.png" alt="" loading="lazy">
+                            </div>
+                            <div class="blog-item__content">
+                                <div class="blog-item__title">
+                                    Замещение отсутствующих зубов
+                                </div>
+                                <div class="blog-item__text">
+                                    Молочные зубы держат место для постоянных.
+                                    Нужно использовать удерживающую распорку при удалении молочного,
+                                    чтобы постоянные зубы выросли ровно
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col-3 blog-item blog-item">
+                            <div class="blog-item__pic">
+                                <img width="384" height="340" src="" alt="" loading="lazy">
+                            </div>
+                            <div class="blog-item__content">
+                                <div class="blog-item__title">
+                                    Замещение отсутствующих зубов
+                                </div>
+                                <div class="blog-item__text">
+                                    Молочные зубы держат место для постоянных.
+                                    Нужно использовать удерживающую распорку при удалении молочного,
+                                    чтобы постоянные зубы выросли ровно
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col-3 sign-up-box">
+                            <div class="sign-up-box__title">
+                                Записать ребёнка на диагностику 
+                            </div>
+                            <div class="sign-up-box__img">
+                                <img width="320" height="280" src="img/sing-up-box.png" alt="" loading="lazy">
+                            </div>
+                            <div class="sign-up-box__bot">
+                                <a class="sign-up-box__btn" href="">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.18182 11.4205L5.01136 10.2614L8.51705 6.75568H0V5.0625H8.51705L5.01136 1.5625L6.18182 0.397727L11.6932 5.90909L6.18182 11.4205Z" fill="white"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="diagnostics main__section">
+            <div class="diagnostics__left">
+                <div class="diagnostics__image">
+                    <div class="service-box">
+                        <div class="service-box__title">
+                            Диагностика Как проходит и что включено в стоимость
+                        </div>
+                        <div class="service-box__descr">
+                            Как проходит и что включено в стоимость Как проходит и что включено в стоимостьКак проходит и что включено в стоимость
+                        </div>
+                        <div class="service-box__image">
+                            <img width="524" height="465" src="img/service-box-image.png" alt="" loading="lazy" />
+                        </div>
+                        <div class="service-box__time time-box">
+                            <div class="time-box__value">60-90</div>
+                            <div class="time-box__units">минут</div>
+                        </div>
+                    </div>
+                </div>
+                <button data-modal-show="sing-up" class="diagnostics__btn">Записаться</button>
+            </div>
+            <div class="diagnostics__right">
+                <div class="diagnostics__services">
+                    <div class="diagnostics__item concreet-service ">
+                        <div class="concreet-service__top">
+                            <div class="concreet-service__icon">
+                                <img src="img/concreet-service-item-1.png" alt="" loading="lazy" />
+                            </div>
+                            <div class="concreet-service__title">
+                                Медицинские фотографии зубов и лие фотографии зубфотографии зубов и лица
+                            </div>
+                        </div>
+                        <div class="concreet-service__text">
+                            Сделаем детализированные снимки внешнего вида зубов и лица
+                            пациента для анализа нашими специалистами и планирования лечения
+                        </div>
+                    </div>
+                    <div class="diagnostics__item concreet-service ">
+                        <div class="concreet-service__top">
+                            <div class="concreet-service__icon">
+                                <img src="img/concreet-service-item-1.png" alt="" loading="lazy" />
+                            </div>
+                            <div class="concreet-service__title">
+                                Медицинские фотографии зубов и лица
+                            </div>
+                        </div>
+                        <div class="concreet-service__text">
+                            Сделаем детализированные снимки внешнего вида зубов и лица
+                            пациента для анализа нашими специалистами и планирования лечения
+                        </div>
+                    </div>
+                    <div class="diagnostics__item concreet-service ">
+                        <div class="concreet-service__top">
+                            <div class="concreet-service__icon">
+                                <img src="img/concreet-service-item-1.png" alt="" loading="lazy" />
+                            </div>
+                            <div class="concreet-service__title">
+                                Медицинские фотографии зубов и лица
+                            </div>
+                        </div>
+                        <div class="concreet-service__text">
+                            Сделаем детализированные снимки внешнего вида зубов и лица
+                            пациента для анализа нашими специалистами и планирования лечения
+                        </div>
+                    </div>
+                    <div class="diagnostics__item concreet-service ">
+                        <div class="concreet-service__top">
+                            <div class="concreet-service__icon">
+                                <img src="img/concreet-service-item-1.png" alt="" loading="lazy" />
+                            </div>
+                            <div class="concreet-service__title">
+                                Медицинские фотографии зубов и лица
+                            </div>
+                        </div>
+                        <div class="concreet-service__text">
+                            Сделаем детализированные снимки внешнего вида зубов и лица
+                            пациента для анализа нашими специалистами и планирования лечения
+                        </div>
+                    </div>
+                    <div class="diagnostics__item concreet-service ">
+                        <div class="concreet-service__top">
+                            <div class="concreet-service__icon">
+                                <img src="img/concreet-service-item-1.png" alt="" loading="lazy" />
+                            </div>
+                            <div class="concreet-service__title">
+                                Медицинские фотографии зубов и лица
+                            </div>
+                        </div>
+                        <div class="concreet-service__text">
+                            Сделаем детализированные снимки внешнего вида зубов и лица
+                            пациента для анализа нашими специалистами и планирования лечения
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="doctors main__section">
+            <div class="doctors__top">
+                <div class="doctors__title">Наши врачи</div>
+                <div class="doctors__arrows">
+                    <button class="doctors__prev js-doctors-prev">
+                        <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.09 11.42.58 5.91 6.09.397l1.171 1.159-3.505 3.506h8.517v1.693H3.756l3.505 3.5-1.17 1.165Z"/></svg>
+                    </button>
+                    <button class="doctors__next js-doctors-next">
+                        <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6.182 11.42-1.17-1.159 3.505-3.505H0V5.062h8.517l-3.506-3.5L6.181.399l5.512 5.511-5.511 5.512Z"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="doctors__body js-doctors-slider">
+                <div class="doctors__item">
+                    <div class="doctor-card">
+                        <div class="doctor-card__photo">
+                            <div class="doctor-card__image">
+                                <img src="img/doc-1.png" alt="" loading="lazy">
+                            </div>
+                            <div class="doctor-card__contacts contacts-list">
+                                <div class="contacts-list__body">
+                                    <a href="" class="contacts-list__item oval-item">Youtube канал</a>
+                                    <a href="" class="contacts-list__item oval-item">Личный сайт</a>
+                                    <a href="" class="contacts-list__item oval-item">Youtube канал</a>
+                                    <a href="" class="contacts-list__item oval-item">Личный сайт</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor-card__content">
+                            <div class="doctor-card__name">
+                                Дыбов Андрей Михайлович Дыбов Андрей Михайлович Дыбов Андрей Михайлович Дыбов Андрей Михайлович Дыбов Андрей Михайлович
+                            </div>
+                            <div class="doctor-card__intro">
+                                Заведующий отделением Доктор медицинских наук, доцент врач-ортодонт, ортопед, гнатолог, стаж 17 лет
+                                Доктор медицинских наук, доцент врач-ортодонт, ортопед, гнатолог, стаж 17 лет
+                                Доктор медицинских наук, доцент врач-ортодонт, ортопед, гнатолог, стаж 17 лет
+                                Доктор медицинских наук, доцент врач-ортодонт, ортопед, гнатолог, стаж 17 лет
+                            </div>
+                            <div class="doctor-card__text">
+                                <p>
+                                    Андрей Михайлович регулярно участвует в российских и международных симпозиумах,
+                                    посвящённых актуальным аспектам ортопедической стоматологии и ортодонтии,
+                                    а также проводит лекции и мастер-классы для начинающих и практикующих врачей-ортодонтов и ортопедов.
+                                </p>
+                                <p>
+                                    Написал и опубликовал более 40 печатных работ, в том числе в журналах,
+                                    рекомендованных ВАК, Scopus и Web of Science.
+                                </p>
+                                <p>
+                                    Защитил докторскую диссертацию на тему Междисциплинарная реабилитация пациентов
+                                    с врождёнными и приобретёнными челюстно-лицевыми деформациями на основе протокола
+                                    трехмерного компьютерного планирования
+                                </p>
+                                <p>
+                                    Андрей Михайлович регулярно участвует в российских и международных симпозиумах,
+                                    посвящённых актуальным аспектам ортопедической стоматологии и ортодонтии,
+                                    а также проводит лекции и мастер-классы для начинающих и практикующих врачей-ортодонтов и ортопедов.
+                                </p>
+                                <p>
+                                    Написал и опубликовал более 40 печатных работ, в том числе в журналах,
+                                    рекомендованных ВАК, Scopus и Web of Science.
+                                </p>
+                                <p>
+                                    Защитил докторскую диссертацию на тему Междисциплинарная реабилитация пациентов
+                                    с врождёнными и приобретёнными челюстно-лицевыми деформациями на основе протокола
+                                    трехмерного компьютерного планирования
+                                </p>
+                                
+                                <span>Специализация:</span>
+
+                                <ul>
+                                    <li>эстетическое и функциональное протезирование,</li>
+                                    <li>исправление прикуса,</li>
+                                    <li>подготовка к ортогнатическим операциям,</li>
+                                    <li>лечение дисфункции ВНЧС,</li>
+                                    <li>подготовка к операциям на ВНЧС,</li>
+                                    <li>послеоперационное ведение</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors__item">
+                    <div class="doctor-card">
+                        <div class="doctor-card__photo">
+                            <div class="doctor-card__image">
+                                <img src="img/doc-2.png" alt="" loading="lazy">
+                            </div>
+                            <div class="doctor-card__contacts contacts-list">
+                                <div class="contacts-list__body">
+                                    <a href="" class="contacts-list__item oval-item">Youtube канал</a>
+                                    <a href="" class="contacts-list__item oval-item">Личный сайт</a>
+                                    <a href="" class="contacts-list__item oval-item">Youtube канал</a>
+                                    <a href="" class="contacts-list__item oval-item">Личный сайт</a>
+                                    <a href="" class="contacts-list__item oval-item">Youtube канал</a>
+                                    <a href="" class="contacts-list__item oval-item">Личный сайт</a>
+                                    <a href="" class="contacts-list__item oval-item">Youtube канал</a>
+                                    <a href="" class="contacts-list__item oval-item">Личный сайт</a>
+                                    <a href="" class="contacts-list__item oval-item">Youtube канал</a>
+                                    <a href="" class="contacts-list__item oval-item">Личный сайт</a>
+                                    <a href="" class="contacts-list__item oval-item">Youtube канал</a>
+                                    <a href="" class="contacts-list__item oval-item">Личный сайт</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor-card__content">
+                            <div class="doctor-card__name">
+                                Дыбов Андрей Михайлович
+                            </div>
+                            <div class="doctor-card__text">
+                                <p>
+                                    Андрей Михайлович регулярно участвует в российских и международных симпозиумах,
+                                    посвящённых актуальным аспектам ортопедической стоматологии и ортодонтии,
+                                    а также проводит лекции и мастер-классы для начинающих и практикующих врачей-ортодонтов и ортопедов.
+                                </p>
+                                <p>
+                                    Написал и опубликовал более 40 печатных работ, в том числе в журналах,
+                                    рекомендованных ВАК, Scopus и Web of Science.
+                                </p>
+                                <p>
+                                    Защитил докторскую диссертацию на тему Междисциплинарная реабилитация пациентов
+                                    с врождёнными и приобретёнными челюстно-лицевыми деформациями на основе протокола
+                                    трехмерного компьютерного планирования
+                                </p>
+                                <p>
+                                    Андрей Михайлович регулярно участвует в российских и международных симпозиумах,
+                                    посвящённых актуальным аспектам ортопедической стоматологии и ортодонтии,
+                                    а также проводит лекции и мастер-классы для начинающих и практикующих врачей-ортодонтов и ортопедов.
+                                </p>
+                                <p>
+                                    Написал и опубликовал более 40 печатных работ, в том числе в журналах,
+                                    рекомендованных ВАК, Scopus и Web of Science.
+                                </p>
+                                <p>
+                                    Защитил докторскую диссертацию на тему Междисциплинарная реабилитация пациентов
+                                    с врождёнными и приобретёнными челюстно-лицевыми деформациями на основе протокола
+                                    трехмерного компьютерного планирования
+                                </p>
+                                
+                                <span>Специализация:</span>
+
+                                <ul>
+                                    <li>эстетическое и функциональное протезирование,</li>
+                                    <li>исправление прикуса,</li>
+                                    <li>подготовка к ортогнатическим операциям,</li>
+                                    <li>лечение дисфункции ВНЧС,</li>
+                                    <li>подготовка к операциям на ВНЧС,</li>
+                                    <li>послеоперационное ведение</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts main__section">
+            <div class="contacts__left">
+                <div class="contacts__title">
+                    Контакты
+                </div>
+                <div class="contacts__messagers">
+                    <div class="messagers">
+                        <div class="messagers__item">
+                            <a href="" class="messagers-button -netural">
+                                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.241.241 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z" fill="url(#a)"/><defs><linearGradient id="a" x1="24" y1="0" x2="0" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#2984F0"/><stop offset="1" stop-color="#0062ED"/></linearGradient></defs></svg>
+                            </a>
+                        </div>
+                        <div class="messagers__item">
+                            <a href="" class="messagers-button -color">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.05 4.91006C18.1332 3.98399 17.0412 3.24973 15.8376 2.75011C14.6341 2.25049 13.3431 1.99552 12.04 2.00006C6.58 2.00006 2.13 6.45006 2.13 11.9101C2.13 13.6601 2.59 15.3601 3.45 16.8601L2.05 22.0001L7.3 20.6201C8.75 21.4101 10.38 21.8301 12.04 21.8301C17.5 21.8301 21.95 17.3801 21.95 11.9201C21.95 9.27006 20.92 6.78006 19.05 4.91006ZM12.04 20.1501C10.56 20.1501 9.11 19.7501 7.84 19.0001L7.54 18.8201L4.42 19.6401L5.25 16.6001L5.05 16.2901C4.22775 14.977 3.79114 13.4593 3.79 11.9101C3.79 7.37006 7.49 3.67006 12.03 3.67006C14.23 3.67006 16.3 4.53006 17.85 6.09006C18.6175 6.85402 19.2257 7.76272 19.6394 8.76348C20.0531 9.76425 20.264 10.8372 20.26 11.9201C20.28 16.4601 16.58 20.1501 12.04 20.1501ZM16.56 13.9901C16.31 13.8701 15.09 13.2701 14.87 13.1801C14.64 13.1001 14.48 13.0601 14.31 13.3001C14.14 13.5501 13.67 14.1101 13.53 14.2701C13.39 14.4401 13.24 14.4601 12.99 14.3301C12.74 14.2101 11.94 13.9401 11 13.1001C10.26 12.4401 9.77 11.6301 9.62 11.3801C9.48 11.1301 9.6 11.0001 9.73 10.8701C9.84 10.7601 9.98 10.5801 10.1 10.4401C10.22 10.3001 10.27 10.1901 10.35 10.0301C10.43 9.86006 10.39 9.72006 10.33 9.60006C10.27 9.48006 9.77 8.26006 9.57 7.76006C9.37 7.28006 9.16 7.34006 9.01 7.33006H8.53C8.36 7.33006 8.1 7.39006 7.87 7.64006C7.65 7.89006 7.01 8.49006 7.01 9.71006C7.01 10.9301 7.9 12.1101 8.02 12.2701C8.14 12.4401 9.77 14.9401 12.25 16.0101C12.84 16.2701 13.3 16.4201 13.66 16.5301C14.25 16.7201 14.79 16.6901 15.22 16.6301C15.7 16.5601 16.69 16.0301 16.89 15.4501C17.1 14.8701 17.1 14.3801 17.03 14.2701C16.96 14.1601 16.81 14.1101 16.56 13.9901Z" fill="white"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="callback-box">
+                        <div class="callback-box__left">
+                            <div class="callback-box__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="#080B2F"/></svg>                                    
+                            </div>
+                        </div>
+                        <div class="callback-box__right">
+                            <a href="tel:+71234567889" class="callback-box__phone">+7 123 456 78 89</a>
+                            <div class="status -work">
+                                <div class="status__circle"></div>
+                                <div class="status__text">Сейчас работаем</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__item">
+                    <a href="" class="info-element">
+                        <div class="info-element__icon">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 20.5C3.45 20.5 2.97933 20.3043 2.588 19.913C2.19667 19.5217 2.00067 19.0507 2 18.5V6.5C2 5.95 2.196 5.47933 2.588 5.088C2.98 4.69667 3.45067 4.50067 4 4.5H20C20.55 4.5 21.021 4.696 21.413 5.088C21.805 5.48 22.0007 5.95067 22 6.5V18.5C22 19.05 21.8043 19.521 21.413 19.913C21.0217 20.305 20.5507 20.5007 20 20.5H4ZM12 13.5L4 8.5V18.5H20V8.5L12 13.5ZM12 11.5L20 6.5H4L12 11.5ZM4 8.5V6.5V18.5V8.5Z" fill="#080B2F"/>
+                            </svg>                                
+                        </div>
+                        <div class="info-element__content">
+                            example_test@gmail.com
+                        </div>
+                    </a>
+                </div>
+                <div class="contacts__item">
+                    <a href="" class="info-element">
+                        <div class="info-element__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 6C11.2583 6 10.5333 6.21993 9.91661 6.63199C9.29993 7.04404 8.81928 7.62971 8.53545 8.31494C8.25162 9.00016 8.17736 9.75416 8.32205 10.4816C8.46675 11.209 8.8239 11.8772 9.34835 12.4017C9.8728 12.9261 10.541 13.2833 11.2684 13.4279C11.9958 13.5726 12.7498 13.4984 13.4351 13.2145C14.1203 12.9307 14.706 12.4501 15.118 11.8334C15.5301 11.2167 15.75 10.4917 15.75 9.75C15.75 8.75544 15.3549 7.80161 14.6517 7.09835C13.9484 6.39509 12.9946 6 12 6ZM12 12C11.555 12 11.12 11.868 10.75 11.6208C10.38 11.3736 10.0916 11.0222 9.92127 10.611C9.75097 10.1999 9.70642 9.7475 9.79323 9.31105C9.88005 8.87459 10.0943 8.47368 10.409 8.15901C10.7237 7.84434 11.1246 7.63005 11.561 7.54323C11.9975 7.45642 12.4499 7.50097 12.861 7.67127C13.2722 7.84157 13.6236 8.12996 13.8708 8.49997C14.118 8.86998 14.25 9.30499 14.25 9.75C14.25 10.3467 14.0129 10.919 13.591 11.341C13.169 11.7629 12.5967 12 12 12ZM12 1.5C9.81273 1.50248 7.71575 2.37247 6.16911 3.91911C4.62247 5.46575 3.75248 7.56273 3.75 9.75C3.75 12.6938 5.11031 15.8138 7.6875 18.7734C8.84552 20.1108 10.1489 21.3151 11.5734 22.3641C11.6995 22.4524 11.8498 22.4998 12.0037 22.4998C12.1577 22.4998 12.308 22.4524 12.4341 22.3641C13.856 21.3147 15.1568 20.1104 16.3125 18.7734C18.8859 15.8138 20.25 12.6938 20.25 9.75C20.2475 7.56273 19.3775 5.46575 17.8309 3.91911C16.2843 2.37247 14.1873 1.50248 12 1.5ZM12 20.8125C10.4503 19.5938 5.25 15.1172 5.25 9.75C5.25 7.95979 5.96116 6.2429 7.22703 4.97703C8.4929 3.71116 10.2098 3 12 3C13.7902 3 15.5071 3.71116 16.773 4.97703C18.0388 6.2429 18.75 7.95979 18.75 9.75C18.75 15.1153 13.5497 19.5938 12 20.8125Z" fill="#080B2F"/>
+                            </svg>                                                                
+                        </div>
+                        <div class="info-element__content">
+                            Москва, м. Парк Победы, ул. Генерала Ермолова д. 10/6
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts__right">
+                <a href="https://yandex.ru/maps/?um=constructor%3Ae98a4c6094a94af7bdaadd4230212c00fabaa9e8ffc3e298da078b2bd8f0c4cc&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Ae98a4c6094a94af7bdaadd4230212c00fabaa9e8ffc3e298da078b2bd8f0c4cc&amp;width=588&amp;height=365&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__left">
+                <div class="footer__menu">
+                    <ul class="tiny-menu">
+                        <li class="tiny-menu__item">
+                            <a class="tiny-menu__link" href="">О нас</a>
+                        </li>
+                        <li class="tiny-menu__item">
+                            <a class="tiny-menu__link" href="">Кейсы</a>
+                        </li>
+                        <li class="tiny-menu__item">
+                            <a class="tiny-menu__link" href="">Команда</a>
+                        </li>
+                        <li class="tiny-menu__item">
+                            <a class="tiny-menu__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <ul class="tiny-menu">
+                        <li class="tiny-menu__item">
+                            <a class="tiny-menu__link" href="">Услуги и цены</a>
+                        </li>
+                        <li class="tiny-menu__item">
+                            <a class="tiny-menu__link" href="">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__middle"></div>
+            <div class="footer__right">
+                <div class="footer__adress tiny-adress">
+                    <div class="tiny-adress__title">Адрес</div>
+                    <div class="tiny-adress__descr">Москва, м. Парк Победы, ул. Генерала Ермолова д. 10/6</div>
+                </div>
+                <div class="footer__items">
+                    <div class="callback-box footer__callback">
+                        <div class="callback-box__right">
+                            <a href="tel:+71234567889" class="callback-box__phone -light">+7 123 456 78 89</a>
+                            <div class="status -not-work">
+                                <div class="status__circle"></div>
+                                <div class="status__text">Сейчас работаем</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__messager messagers">
+                        <div class="messagers__item">
+                            <a href="" class="messagers-button -netural">
+                                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.241.241 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z" fill="url(#a)"/><defs><linearGradient id="a" x1="24" y1="0" x2="0" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#2984F0"/><stop offset="1" stop-color="#0062ED"/></linearGradient></defs></svg>
+                            </a>
+                        </div>
+                        <div class="messagers__item">
+                            <a href="" class="messagers-button -color">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.05 4.91006C18.1332 3.98399 17.0412 3.24973 15.8376 2.75011C14.6341 2.25049 13.3431 1.99552 12.04 2.00006C6.58 2.00006 2.13 6.45006 2.13 11.9101C2.13 13.6601 2.59 15.3601 3.45 16.8601L2.05 22.0001L7.3 20.6201C8.75 21.4101 10.38 21.8301 12.04 21.8301C17.5 21.8301 21.95 17.3801 21.95 11.9201C21.95 9.27006 20.92 6.78006 19.05 4.91006ZM12.04 20.1501C10.56 20.1501 9.11 19.7501 7.84 19.0001L7.54 18.8201L4.42 19.6401L5.25 16.6001L5.05 16.2901C4.22775 14.977 3.79114 13.4593 3.79 11.9101C3.79 7.37006 7.49 3.67006 12.03 3.67006C14.23 3.67006 16.3 4.53006 17.85 6.09006C18.6175 6.85402 19.2257 7.76272 19.6394 8.76348C20.0531 9.76425 20.264 10.8372 20.26 11.9201C20.28 16.4601 16.58 20.1501 12.04 20.1501ZM16.56 13.9901C16.31 13.8701 15.09 13.2701 14.87 13.1801C14.64 13.1001 14.48 13.0601 14.31 13.3001C14.14 13.5501 13.67 14.1101 13.53 14.2701C13.39 14.4401 13.24 14.4601 12.99 14.3301C12.74 14.2101 11.94 13.9401 11 13.1001C10.26 12.4401 9.77 11.6301 9.62 11.3801C9.48 11.1301 9.6 11.0001 9.73 10.8701C9.84 10.7601 9.98 10.5801 10.1 10.4401C10.22 10.3001 10.27 10.1901 10.35 10.0301C10.43 9.86006 10.39 9.72006 10.33 9.60006C10.27 9.48006 9.77 8.26006 9.57 7.76006C9.37 7.28006 9.16 7.34006 9.01 7.33006H8.53C8.36 7.33006 8.1 7.39006 7.87 7.64006C7.65 7.89006 7.01 8.49006 7.01 9.71006C7.01 10.9301 7.9 12.1101 8.02 12.2701C8.14 12.4401 9.77 14.9401 12.25 16.0101C12.84 16.2701 13.3 16.4201 13.66 16.5301C14.25 16.7201 14.79 16.6901 15.22 16.6301C15.7 16.5601 16.69 16.0301 16.89 15.4501C17.1 14.8701 17.1 14.3801 17.03 14.2701C16.96 14.1601 16.81 14.1101 16.56 13.9901Z" fill="white"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div data-modal="sing-up" class="default-modal">
+            <div class="default-modal__body">
+                <div class="default-modal__top">
+                    <div class="default-modal__title">Заявка на диагностику</div>
+                    <button data-closed-modal class="default-modal__closed">
+                        <svg viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg"><path d="M1.26683 10.1667L0.333496 9.23334L4.06683 5.5L0.333496 1.76667L1.26683 0.833336L5.00016 4.56667L8.7335 0.833336L9.66683 1.76667L5.9335 5.5L9.66683 9.23334L8.7335 10.1667L5.00016 6.43334L1.26683 10.1667Z"/></svg>
+                    </button>
+                </div>
+                <div class="default-modal__descr">
+                    <div class="default-modal__text">
+                        Перезвоним в течение 15 минут
+                    </div>
+                    <div class="default-modal__text -light">
+                        Работаем по будням с 8:00 до 21:00, по выходным с 9:00 до 21:00
+                    </div>
+                </div>
+                <form class="default-modal__form modal-form" action="" method="post">
+                    <div class="modal-form__fields">
+                        <div class="modal-form__field">
+                            <input class="default-input" type="text" placeholder="Ваше имя" autocomplete="false">
+                        </div>
+                        <div class="modal-form__field">
+                            <input class="default-input js-phone-mask" type="text" placeholder="Телефон" autocomplete="false">
+                        </div>
+                    </div>
+                    <button class="modal-form__btn" type="submit">Оставить заявку</button>
+                    <div class="modal-form__policy">
+                        Заполняя форму, я принимаю условия обработки данных
+                    </div>
+                    <div class="modal-form__other other-contacts">
+                        <div class="other-contacts__title">Другие способы связи</div>
+                        <div class="other-contacts__messagers">
+                            <div class="messagers">
+                                <div class="messagers__item">
+                                    <a href="" class="messagers-button -netural">
+                                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.241.241 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z" fill="url(#a)"/><defs><linearGradient id="a" x1="24" y1="0" x2="0" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#2984F0"/><stop offset="1" stop-color="#0062ED"/></linearGradient></defs></svg>
+                                    </a>
+                                </div>
+                                <div class="messagers__item">
+                                    <a href="" class="messagers-button -color">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.05 4.91006C18.1332 3.98399 17.0412 3.24973 15.8376 2.75011C14.6341 2.25049 13.3431 1.99552 12.04 2.00006C6.58 2.00006 2.13 6.45006 2.13 11.9101C2.13 13.6601 2.59 15.3601 3.45 16.8601L2.05 22.0001L7.3 20.6201C8.75 21.4101 10.38 21.8301 12.04 21.8301C17.5 21.8301 21.95 17.3801 21.95 11.9201C21.95 9.27006 20.92 6.78006 19.05 4.91006ZM12.04 20.1501C10.56 20.1501 9.11 19.7501 7.84 19.0001L7.54 18.8201L4.42 19.6401L5.25 16.6001L5.05 16.2901C4.22775 14.977 3.79114 13.4593 3.79 11.9101C3.79 7.37006 7.49 3.67006 12.03 3.67006C14.23 3.67006 16.3 4.53006 17.85 6.09006C18.6175 6.85402 19.2257 7.76272 19.6394 8.76348C20.0531 9.76425 20.264 10.8372 20.26 11.9201C20.28 16.4601 16.58 20.1501 12.04 20.1501ZM16.56 13.9901C16.31 13.8701 15.09 13.2701 14.87 13.1801C14.64 13.1001 14.48 13.0601 14.31 13.3001C14.14 13.5501 13.67 14.1101 13.53 14.2701C13.39 14.4401 13.24 14.4601 12.99 14.3301C12.74 14.2101 11.94 13.9401 11 13.1001C10.26 12.4401 9.77 11.6301 9.62 11.3801C9.48 11.1301 9.6 11.0001 9.73 10.8701C9.84 10.7601 9.98 10.5801 10.1 10.4401C10.22 10.3001 10.27 10.1901 10.35 10.0301C10.43 9.86006 10.39 9.72006 10.33 9.60006C10.27 9.48006 9.77 8.26006 9.57 7.76006C9.37 7.28006 9.16 7.34006 9.01 7.33006H8.53C8.36 7.33006 8.1 7.39006 7.87 7.64006C7.65 7.89006 7.01 8.49006 7.01 9.71006C7.01 10.9301 7.9 12.1101 8.02 12.2701C8.14 12.4401 9.77 14.9401 12.25 16.0101C12.84 16.2701 13.3 16.4201 13.66 16.5301C14.25 16.7201 14.79 16.6901 15.22 16.6301C15.7 16.5601 16.69 16.0301 16.89 15.4501C17.1 14.8701 17.1 14.3801 17.03 14.2701C16.96 14.1601 16.81 14.1101 16.56 13.9901Z" fill="white"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div data-modal="callback" class="default-modal">
+            <div class="default-modal__body">
+                <div class="default-modal__top">
+                    <div class="default-modal__title">
+                        Заказать звонок
+                    </div>
+                    <button data-closed-modal class="default-modal__closed">
+                        <svg viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg"><path d="M1.26683 10.1667L0.333496 9.23334L4.06683 5.5L0.333496 1.76667L1.26683 0.833336L5.00016 4.56667L8.7335 0.833336L9.66683 1.76667L5.9335 5.5L9.66683 9.23334L8.7335 10.1667L5.00016 6.43334L1.26683 10.1667Z"/></svg>
+                    </button>
+                </div>
+                <div class="default-modal__descr">
+                    <div class="default-modal__text">
+                        Перезвоним в течение 15 минут
+                    </div>
+                    <div class="default-modal__text -light">
+                        Работаем по будням с 8:00 до 21:00, по выходным с 9:00 до 21:00
+                    </div>
+                </div>
+                <form class="default-modal__form modal-form" action="" method="post">
+                    <div class="modal-form__fields">
+                        <div class="modal-form__field">
+                            <input class="default-input" type="text" placeholder="Ваше имя" autocomplete="false">
+                        </div>
+                        <div class="modal-form__field">
+                            <input class="default-input js-phone-mask" type="text" placeholder="Телефон" autocomplete="false">
+                        </div>
+                    </div>
+                    <button class="modal-form__btn" type="submit">Оставить заявку</button>
+                    <div class="modal-form__policy">
+                        Заполняя форму, я принимаю условия обработки данных
+                    </div>
+                    <div class="modal-form__other other-contacts">
+                        <div class="other-contacts__title">Другие способы связи</div>
+                        <div class="other-contacts__messagers">
+                            <div class="messagers">
+                                <div class="messagers__item">
+                                    <a href="" class="messagers-button -netural">
+                                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.241.241 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z" fill="url(#a)"/><defs><linearGradient id="a" x1="24" y1="0" x2="0" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#2984F0"/><stop offset="1" stop-color="#0062ED"/></linearGradient></defs></svg>
+                                    </a>
+                                </div>
+                                <div class="messagers__item">
+                                    <a href="" class="messagers-button -color">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.05 4.91006C18.1332 3.98399 17.0412 3.24973 15.8376 2.75011C14.6341 2.25049 13.3431 1.99552 12.04 2.00006C6.58 2.00006 2.13 6.45006 2.13 11.9101C2.13 13.6601 2.59 15.3601 3.45 16.8601L2.05 22.0001L7.3 20.6201C8.75 21.4101 10.38 21.8301 12.04 21.8301C17.5 21.8301 21.95 17.3801 21.95 11.9201C21.95 9.27006 20.92 6.78006 19.05 4.91006ZM12.04 20.1501C10.56 20.1501 9.11 19.7501 7.84 19.0001L7.54 18.8201L4.42 19.6401L5.25 16.6001L5.05 16.2901C4.22775 14.977 3.79114 13.4593 3.79 11.9101C3.79 7.37006 7.49 3.67006 12.03 3.67006C14.23 3.67006 16.3 4.53006 17.85 6.09006C18.6175 6.85402 19.2257 7.76272 19.6394 8.76348C20.0531 9.76425 20.264 10.8372 20.26 11.9201C20.28 16.4601 16.58 20.1501 12.04 20.1501ZM16.56 13.9901C16.31 13.8701 15.09 13.2701 14.87 13.1801C14.64 13.1001 14.48 13.0601 14.31 13.3001C14.14 13.5501 13.67 14.1101 13.53 14.2701C13.39 14.4401 13.24 14.4601 12.99 14.3301C12.74 14.2101 11.94 13.9401 11 13.1001C10.26 12.4401 9.77 11.6301 9.62 11.3801C9.48 11.1301 9.6 11.0001 9.73 10.8701C9.84 10.7601 9.98 10.5801 10.1 10.4401C10.22 10.3001 10.27 10.1901 10.35 10.0301C10.43 9.86006 10.39 9.72006 10.33 9.60006C10.27 9.48006 9.77 8.26006 9.57 7.76006C9.37 7.28006 9.16 7.34006 9.01 7.33006H8.53C8.36 7.33006 8.1 7.39006 7.87 7.64006C7.65 7.89006 7.01 8.49006 7.01 9.71006C7.01 10.9301 7.9 12.1101 8.02 12.2701C8.14 12.4401 9.77 14.9401 12.25 16.0101C12.84 16.2701 13.3 16.4201 13.66 16.5301C14.25 16.7201 14.79 16.6901 15.22 16.6301C15.7 16.5601 16.69 16.0301 16.89 15.4501C17.1 14.8701 17.1 14.3801 17.03 14.2701C16.96 14.1601 16.81 14.1101 16.56 13.9901Z" fill="white"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+    <script id="tiny-slider" async defer src="js/tiny-slider.js"></script>
+    <script id="input-mask" async defer src="https://unpkg.com/imask"></script>
+    <script src="js/scripts.js"></script>
+</html>
