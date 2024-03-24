@@ -8,7 +8,7 @@ import ttf2woff2 from 'gulp-ttf2woff2';
 const sass = gulpSass(dartSass);
 
 const path_src = 'src/';
-const path_dist = 'dist/';
+const path_dist = 'docs/';
 
 const pathes = {
     style_source: path_src + 'scss/',
